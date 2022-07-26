@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <br/> <br/>
+    <button onclick="fact()">Factorial n sum</button>
+
+    <p id="res"></p>
+
+    <script>
+        var num;
+        num = parseInt(prompt("Enter a no."));
+        function fact() {
+            var i, f;
+
+            f = 1;
+            // num = document.getElementById("num").value;
+           
+            for(i=1;i<=num;i++) {
+                f = f * i;
+            }
+            document.getElementById("res").innerHTML = 
+                        "The factorial of the number " + num + " is:- " + f;
+        }
+        var sum =0;
+        for(i=1;i<=num;i++){
+            if( i % 2 == 0){
+                sum= sum + i;
+             }
+           
+           } 
+        document.write(sum);
+    </script>
+</body>
+</html>
